@@ -1,68 +1,62 @@
----
-title: Antibot
----
-Antibot is used to filter out fake Players made by Anticheats effords to detect your Killaura
-# Modes
-Modes are used to customize Antibot so it suits the Server you play on
+# ANTIBOT
 
-#### Advanced
-Uses Magic to search for Bots(idk atm)
+**AntiBot** module filters and ignores bots, NPCs, and fake players such as shopkeepers or anti-cheat decoys.
 
-#### Hypixel
-Antibot for Hypixel
+Mode:
+**IsInTabList**
+Ignores entities that are not in the tab list. Real players appear in tab; bots and NPCs usually don’t.
 
-#### Intave 
-Antibot for Intave Servers like GommeHD
+**Advanced**
+Uses multiple detection checks combined. Helps catch more complex or disguised bots.
 
-#### NullTeam 
-Check if Bot is in Team NULL
+**Hypixel**
+Activates custom checks for Hypixel. Ignores shopkeepers, NPCs, and anti-cheat bots unique to that server.
 
-#### IlligalPitch
-Checks if Bot has an Illigal Pitch
+**Intave**
+Detects bots used by the Intave anti-cheat system. Looks for fake movement and behavior.
 
-#### TicksExisted
-Checks for how many Ticks the Bot existed
+**NullTeam**
+Flags entities that have no team assigned. Real players usually have one (even if invisible).
 
-#### NegativHealth
-Checks if Bot has -1 Health or less
+**IllegalPitch**
+Detects bots with invalid pitch (vertical rotation), such as values beyond normal limits.
 
-#### ZeroPing
-Checks if Bot has 0 Ping because its not a Player connected to the Server hense why the Bot doesnt have a Ping
+**Ticks Existed**
+Flags entities that have existed for only a few ticks. Bots are often freshly spawned.
 
-#### IsInTabList 
-Checks if Bot is in Tablist
+**NegativeHealth**
+Detects bots with negative health, which is impossible for real players.
 
-#### InvalidEntityID
-Checks if the Bot has a Invalid Entity ID
+**ZeroPing**
+Flags entities showing 0ms ping – usually fake, server-side bots or NPCs.
 
-#### InvalidName
-Checks if Bot has a Invalid Name
+**InvalidEntity ID**
+Detects entities with invalid or out-of-range entity IDs.
 
-#### NeverOnGround
-Checks if the Bot ever Touched the Ground
+**InvalidName**
+Flags weird or malformed names. Often used by bots or NPCs.
 
-#### DistanceCheck
-Distance for Antibot to Check Players(idk atm)
+**Never OnGround**
+Flags entities that are always airborne or never touch the ground.
 
-#### CheckDistance
-Set Check Distance from 6 - 40
+**Swinged**
+Detects if an entity has never swung its arm (no attacks or interactions). Bots usually don't swing.
 
-#### Swinged
-I guess if the bot ever swinged?(Idk atm)
-DistanceCheck: Distance for Antibot to Check (idk atm)
-CheckDistance: Set the Check Distance from 6 - 40
+**ItemInHand**
+Flags entities with no valid item held. Real players usually hold an item.
 
-#### ItemInHand
-Checks if the Bot has an Item in the Hand?(Idk atm)
-DistanceCheck: Distance for Antibot to Check (idk atm)
-CheckDistance: Set the Check Distance from 6 - 40
+**Armor**
+Detects bots with no or unusual armor setups.
 
-#### Armor
-Checks if the Bot has Armor(Idk atm)
-DistanceCheck: Distance for Antibot to Check (idk atm)
-CheckDistance: Set the Check Distance from 6 - 40
+**Sound**
+Flags entities that produce no normal player sounds (footsteps, damage sounds).
 
-#### Sound
-Checks if the Bot made a Sound(Idk atm)
-DistanceCheck: Distance for Antibot to Check (idk atm)
-CheckDistance: Set the Check Distance from 6 - 40
+<div style="border-left: 5px solid #E94B35; background-color: #FDECEA; padding: 15px; color: #B22222; font-family: Arial, sans-serif; border-radius: 8px; max-width: 600px; box-shadow: 0 2px 5px rgba(233,75,53,0.3);">
+  <strong style="font-size: 18px; display: flex; align-items: center; margin-bottom: 8px;">
+    ⚠️ Warning: AntiBot Module Recommended
+  </strong>
+  <p style="font-size: 16px; line-height: 1.4;">
+    Not using AntiBot modules can lead to faster bans on servers that use fake players to detect hacks like KillAura.  
+    Protect yourself by enabling AntiBot features.
+  </p>
+</div>

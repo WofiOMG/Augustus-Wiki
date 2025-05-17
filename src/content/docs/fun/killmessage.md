@@ -1,52 +1,43 @@
----
-title: KillMessage
-description: Like CSGO Killsay
----
-KillMessage will send a very Message you can set after you kill anyone
+# KILLMESSAGE
+Automatically sends a msg when you die first time or kill your enemy first time or both. You can only set one custom killmessage curently.
+**KillMessage:**
+ Sends an automatic message after a kill or death.
 
-#### Irrelevant
+**Irrelevant:**
+ Sends a message whether you kill or die.
 
-Send a Message when you Kill the Enemy or when you get killed
+**YourFirst:** 
+Sends a message only if you get killed.
 
-#### YourFirst
-Sends a Message when Enemy Kills you
+**OpponentFirst:**
+Sends a message only if you kill someone.
 
-#### OpponentFirst
-Send a Message when you Kill the Enemy
+**Message Types:**
 
-#### Augustus
-Sends this Message: \[Person who was Killed\] killed by Augustus! Learn to cheat Autoclicker User
+**Augustus:**
+ [Player] killed by Augustus! Learn to cheat Autoclicker User
 
-#### L
-Sends this Message: L \[Person who was Killed\]
+**L:**
+L [Player]
 
-#### GG
-Sends this Message: GG \[Person who was Killed\]
+**GG:** 
+GG [Player]
 
-#### GG ac
-Sends this Message: gg ac \[Person who was Killed\]
+**GG ac:** 
+gg ac [Player]
 
-#### Hahaha
-Sends this Message: hahahahahaha \[Person who was Killed\]
+**Hahaha:**
+ hahahahaha [Player]
 
-#### Spectate
-Sends this message: Wie ist es so zu spectaten \[Person who was killed\]?
+**Spectate:**
+ Wie ist es so zu spectaten [Player]?
 
-#### Custom
-Sends a Custom Message that can be set with: .KillMessage Message you wanna see
+Custom: Custom message set using .KillMessage <message>
+Example: .killmessage get good 
+It will also say the players name at the end.
 
-#### MinDelay
-Sets how many MS it takes to send the KillMessage after killing/being Killed
+## Delays:
+**MinDelay / MaxDelay:**
+ Sets a random delay between these values (in ms) before sending the message.
 
-#### MaxDelay
-Sets how many MS can pass before the KillMessage is send after Kill/being Killed
-
-<div style="border-left: 3px solid #EEBD53; background-color: #5C4C29; padding: 10px 15px; color: #F4E6C5; font-family: Arial, sans-serif; font-size: 14px; max-width: 600px; border-radius: 8px; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-  <div style="display: flex; align-items: center; font-weight: bold; margin-bottom: 1px;">
-    <span style="font-size: 20px; margin-right: 10px;">&#9888;</span>
-    <span>Caution</span>
-  </div>
-  <div>
-    If you set MinDelay and MaxDelay to diffrent values the Client will take Values between those two Numbers.
-  </div>
-</div>
+If MinDelay and MaxDelay differ, a random delay between them will be used.

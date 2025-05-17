@@ -1,5 +1,5 @@
 ---
 title: AutoJumpAndRun
-description: Makes you look like pro in Jump and Run
+description: Automatically completes parkour on GommeHD
 ---
-AutoJumpAndRun lets you complete the Wool Jump and Run in the GommeHD Lobby before a Game
+AutoJumpAndRun (Gomme mode): Automatically completes parkour by jumping and running over blocks with precise timing. Optimized for GommeHD server parkour layouts.

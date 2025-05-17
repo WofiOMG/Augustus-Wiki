@@ -1,5 +1,4 @@
----
-title: MLG
-description: This is very fun
----
-Enabling this makes your screen flash in rainbow colors loud MLG Music will play and Random MLG Gifs and Hitmarker will Appear if you start hitting people
+# MLG
+MLG (Fun Module):
+Makes your screen flash rainbow colors with some music playing, creating a fun visual and audio effect.
+Warning: This effect can hurt your eyes or cause discomfort, especially if you are sensitive to flashing lights. Use with caution.

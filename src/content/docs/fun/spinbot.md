@@ -1,28 +1,23 @@
----
-title: SpinBot
-description: makes you go swoswoswoswoswoswoswo
----
+# SPINBOT
+Spinbot rapidly rotates your player’s view horizontally and vertically. Rotations are only serverside, to see your rotations you have to be in 3rd person view.
 
-Makes your Character spin like CSGO Spinbot
+**MinYawSpeed:**
+Minimum speed of horizontal rotation (yaw).
 
-#### MoveFix
-Makes your movement same as on the Serverside, where your Player will look he will go. Because your Player is Spinning and looking onto the ground enabling this will make your movement scuffed and all hit and place actions will only go down on the ground
+**MaxYawSpeed:**
+Maximum speed of horizontal rotation (yaw).
 
-### Settings
-This Settings tell make the Spinbot stop under named Conditions¦
+**MinPitchValue:**
+Minimum vertical rotation (pitch).
 
-#### StopSpinningON
+**MaxPitchValue:**
+Maximum vertical rotation (pitch).
 
-Under this Conditions the Spinbot stops
+**Serverside:**
+If true, applies spin effects that are visible on the server side.
 
-#### Click
-Stops when you Click
+**MoveFix:**
+Adjusts movement to prevent issues while spinning.
 
-#### Chest
-Stops when you open a Chest
-
-#### Crafting Table
-Stops when you open a Craftingtable
-
-#### Furnace
-Stops when you open a Furnace
+**StopSpinningOn:**
+Stops spinning when interacting with specified blocks or actions like Click, Chest, Crafting Table, or Furnace.

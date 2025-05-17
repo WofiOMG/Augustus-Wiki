@@ -1,118 +1,191 @@
----
-title: MoreKB
----
-MoreKB gives you more options to deal more knockback
+# MOREKB
+Manipulates sprint resetting and movement patterns to deal more knockback to opponents. Based on Minecraft knockback mechanics, where sprinting right before hitting causes extra KB. This module controls how, when, and how often sprint is reset for max effect.
 
-## Modes
-MoreKB comes with diffrent modes to gain more knockback
+## Modes:
 
-### STap
-Simulates the PvP S-Tap technique by increasing knockback through movement control
+## STap
+ Classic sprint tapping method: stops and quickly restarts sprint to boost KB.
 
-### LegitSneak
-Implements the Shift-Tap (Sneak-Tap) technique to control and enhance knockback
+## LegitSneak
+ Simulates sneaking while resetting sprint for stealthy behavior.
 
-### Legit
-Simulates the PvP technique of W-Tap for legitimate knockback enhancement
+## Legit
+ Mimics natural sprint resets used by legit players.
 
-### LegitFast
-A faster and more aggressive version of Legit for increased knockback
+## LegitFast
+ Same as Legit but with faster timing.
 
-### Fast
-Maximizes knockback through high frequency of action
+## Fast
+ Resets sprint aggressively with minimal delay.
 
-### LessPacket
-Reduces the number of packets sent
+## LessPacket
+ Reduces packet usage while resetting sprint to avoid detection.
 
-### Packet
-Uses special packets to enhance the knockback
+## Packet
+ Uses packet manipulation to reset sprint (no actual key input).
 
-### DoublePacket
-Doubles the number of packets to maximize the knockback
+## DoublePacket
+ Sends two sprint packets for stronger effect.
 
-### One
-Minimalistic mode for neat knockback control
+## One
+ Only does one sprint reset per trigger.
 
-## Timing settings
-Lets you set timings for knockback
+**HideSneak Animation:**
+Hides the sneak animation while using modes like LegitSneak to avoid visual cues.
 
-### MinSprintResetTime / MaxSprintResetTime
-Set the delay in ticks for W-Tap after successfully hitting a target
+**FOV:**
+Field of view condition – can restrict MoreKb activation to a specific angle/cone of view.
 
-### NotInARow
-Prohibits the use of identical W-Tap delays in a row
+**IgnoreEatingTargets:**
+If enabled, ignores targets that are currently eating, to avoid wasted KB boosts.
 
-### MaxInARow
-Maximum number of repetitions in a row
+**DontSprintResetIfYouAlreadyDidLegit:**
+Prevents extra sprint resets if a legit-style one was already performed recently. Helps avoid looking suspicious.
 
-### Outliers
-Excludes outliers
+## Timing 
+MinSprint ResetTime:
+Minimum time between sprint reset triggers.
 
-### MinSprintResetTimeOutlierValue / MaxSprintResetTimeOutlierValue
-Values to handle outliers
+**MaxSprint ResetTime:**
+Maximum time between sprint reset triggers. Randomized between min-max to avoid patterns.
 
-### MinOutlierDelay / MaxOutlierDelay
-Set the minimum and maximum delay for emissions
+**NotInARow:**
+Prevents sprint resets from happening back-to-back in predictable sequences.
 
-### Normal Distribution
-Enables uniform distribution of time values
+**Outliers:**
+Enables rare “outlier” sprint reset timings outside the normal range to simulate randomness.
+MinDoubleResetDelayOutlierValue:
+The minimum value used for outlier double reset delay. Only used when an outliner is triggered.
 
-### Sigma / Center
-Distribution settings
+**MaxDoubleResetDelayOutlierValue:**
+The maximum value used for outlier double reset delay. Random value is chosen between min and max.
 
-## Duration settings
-Lets you set duration settings
+**MinOutlierDelay:**
+Minimum delay between two outlier events. Prevents outliers from happening too frequently.
 
-### MinSprintResetDuration / MaxSprintResetDuration
-Number of ticks for which W-Tap will be active
+**MaxOutlierDelay:**
+Maximum delay between outlier events. Adds randomness to the timing of when outliers can occur.
 
-### NotInARow
-Prohibits the same W-Tap duration consecutively
+**MinSprintResetTimeOutlierValue:**
+Minimum timing used for rare outlier sprint resets.
 
-### Outliers, Normal Distribution
-Operate similarly to the Timing settings
+**MaxSprintResetTimeOutlierValue:**
+Maximum value for outlier reset timings.
 
-## DoubleReset settings
-Lets you configure double reset settings
+**MinOutlierDelay:**
+Minimum delay between each outlier reset.
 
-### DoubleSprintReset
-Enables or disables double W-Tap
+**MaxOutlierDelay:**
+Maximum delay between outlier resets.
 
-### MinDoubleResetTiming / MaxDoubleResetTiming
-Delay in ticks for W-Tap after a successful hit on a target
+**Normal Distribution:**
+Uses a bell-curve distribution (instead of flat randomness) to determine reset timings. Looks more human.
 
-### MinDoubleResetDelay / MaxDoubleResetDelay
-Delay between two W-Taps
+## Duration 
 
-### MinDoubleResetDelayOutlierValue / MaxDoubleResetDelayOutlierValue
-Values for handling outliers
+**MinSprintResetDuration:**
+Minimum time sprint is canceled before being reset.
 
-### MinOutlierDelay / MaxOutlierDelay
-Minimum and maximum emission delay settings
+**MaxSprintResetDuration:**
+Maximum sprint cancel duration.
 
-### Normal Distribution
-Enables normal distribution
+**NotInARow:**
+Prevents multiple sprint cancels in a row. Randomizes them to look legit.
 
-### Sigma / Center
-Sigma and Center modifies the percantage of values being picked by min and max. Simplefied said if you set min to 1 and max to 10 without normal distribution it would just give every value a 10% chance of being picked and that would change depending on what you set. With sigma and center you can shift around those odds to make the outcome more randomized. TL:DR Use this to make every value for min and max random to make it harder to be detected if anticheats check for this
+**Outliers:**
+Allows unusual durations occasionally for realism.
 
-## Fail Settings
-Lets you configure certain settings to make MoreKB seem legit
+**MinSprintResetTicksOutlierValue:**
+Minimum ticks for sprint to cancel outlier duration.
 
-### FailSprintReset
-Enables or disables random W-Tap misses
+**MaxSprintResetTicksOutlierValue**:
+Maximum ticks for sprint to cancel outlier duration.
 
-### MinFailDelay / MaxFailDelay
-Delay in ticks between W-Tap skips
+**MinOutlierDelay:**
+Minimum delay before next outlier event.
 
-### MinFailDuration / MaxFailDuration
-Number of ticks for which the pass will be active
+**MaxOutlierDelay:**
+Maximum delay before next outlier event.
 
-### NotInARow
-Prevents identical skips in a row
+**NormalDistribution:**
+**Sigma:**
+Controls how "spread out" the values are.
+Lower values = most reset timings will be close to the center (less variation).
+Higher values = more variation and randomness in sprint reset timings.
 
-### Normal Distribution
-Configures an even distribution of time values
+**Center:**
+The average (mean) value for the distribution.
+Sprint reset values will tend to cluster around this point when NormalDistribution is enabled.
 
-### Sigma / Center
-Distribution parameters for skips
+## DoubleReset 
+
+**DoubleSprintReset:**
+Enables back-to-back sprint resets to maximize knockback.
+
+**MinDoubleResetTiming:**
+Minimum time between two sprint resets in a double reset.
+
+**MaxDoubleResetTiming:**
+Maximum time between sprint resets in a double reset.
+
+**NotInARow:**
+Prevents doing multiple double resets consecutively.
+
+**NomalDistribution:**
+Randomizes timing between first and second reset with a realistic distribution.
+
+**Sigma:**
+Controls the spread of the normal distribution. Higher = more randomness.
+
+**Center:**
+Mean value (center) of the distribution for double reset timing.
+
+**MinDoubleResetDelay:**
+Minimum delay before another double reset can occur in ticks. 20 ticks= 1 sec
+
+**MaxDoubleResetDelay:**
+Maximum delay before another double reset can occur.
+
+**Outliers:**
+Allows abnormal timing between resets to look more human.
+
+**MinDoubleResetDelayOutlierValue:**
+The minimum value used for outlier double reset delay. Only used when an outlier is triggered.
+
+**MaxDoubleResetDelayOutlierValue:**
+The maximum value used for outlier double reset delay. Random value is chosen between min and max.
+
+**MinOutlierDelay:**
+Minimum delay between two outlier events. Prevents outliers from happening too frequently.
+
+MaxOutlierDelay:
+Maximum delay between outlier events. Adds randomness to the timing of when outliers can occur.
+## Fail
+
+**FailSprintReset:**
+Simulates failed sprint resets to avoid perfect patterns. Helps bypass anti-cheat.
+
+**MinFailDelay:**
+Minimum delay before a failed sprint reset happens.
+
+**MaxFailDelay:**
+Maximum delay before a failed reset.
+
+**MinFailDuration:**
+Shortest possible fail duration (how long the sprint reset fails).
+
+**MaxFailDuration:**
+Longest possible fail duration.
+
+**NotInARow:**
+Avoids multiple failed resets in a row.
+
+**Normal Distribution:**
+**Sigma:**
+Controls how "spread out" the values are.
+Lower values = most reset timings will be close to the center (less variation).
+Higher values = more variation and randomness in sprint reset timings.
+
+**Center:**
+The average (mean) value for the distribution.
+Sprint reset values will tend to cluster around this point when NormalDistribution is enabled.

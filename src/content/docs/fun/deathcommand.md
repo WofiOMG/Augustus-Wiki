@@ -1,13 +1,12 @@
----
-title: Deathcommand
-description: For GommeHD
----
-DeathCommand sends /warp ffa into chat so you get teleported to GommeHD FFA
+# DEATHCOMMAND
+**DeathCommand (GommeHD):**
+ Sends /warp ffa after death to instantly rejoin GommeHD’s FFA (Free For All) arena.
 
-#### MinDelay
+**MinDelay:**
+ Minimum delay before sending the command.
 
-Sets how slow the Module can be
+**MaxDelay:**
+Maximum delay before sending the command.
 
-#### MaxDelay:
-
-sets how fast the Module can be
+**FFA:**
+"Free For All" — a PvP mode where every player fights on their own without teams.

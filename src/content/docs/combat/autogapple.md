@@ -1,25 +1,26 @@
----
-title: AutoGapple
-description: AutoGapple auto Eats Gapples
----
-AutoGapple automatically eats a golden apple certain conditions when the player's HP drops below a certain threshold.
+# AUTOGAPPLE
 
-## Min/MaxHealth
+Automatically eats a golden apple when certain conditions are met.
 
-Defines the minimum/maximum number of hearts at which the player should start eating a golden apple.
+**MinHealth:**
+Minimum health threshold. If your health drops below this value, AutoGapple activates and eats a golden apple.
 
-## ConsiderTargetHealth
+**MaxHealth:**
+Maximum health at which AutoGapple will trigger. If your health is above this value, it will not eat a gapple. Useful to prevent wasting gapples when already nearly full. If MinHealth and MaxHealth are diffrent a random value between them will be chosen.
 
-Will consider the target's health.
+**ConsiderTargetHealth:**
+When enabled, considers the health of your enemy. If the target has high health and you're low, it increases priority to eat a gapple.
 
-## NotWhileKillAura
+**NotWhileKillAura:**
+Prevents AutoGapple from activating while KillAura is running. Helps avoid fighting and eating.
 
-Deactivates the functionality of the module as long as the KillAura is attacking a player.
+**While Regeneration:**
+Only eats a gapple if you're not already regenerating. Prevents overlapping or wasted regen effects.
 
-## WhileRegeneration
+**JumpAndPress:**
+Makes your player jump and right-click when eating the gapple. Useful to bypass some anti-cheat checks or simulate legit behavior and makes you a little faster.
 
-Determines whether the module should be active during the regeneration effect.
+<div style="border-left: 5px solid #FF6F61; background: #FFF0F0; padding: 10px; color: #A00000; font-family: Arial, sans-serif; border-radius: 6px; max-width: 400px; box-shadow: 0 2px 8px rgba(255,111,97,0.4); font-weight: bold;">
+  ⚠️ <span style="color:#FF3B3B;">Set min and max health at diffrent values to show randomness.</span><br>
+</div>
 
-## JumpAndPressS
-
-Causes the player to run backwards and jump while the module initiates gold apple consumption.

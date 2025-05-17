@@ -1,5 +1,2 @@
----
-title: LAG
-description: Old Gomme Lag
----
-Old GommeHD Server Lag that was patched
+# LAG
+Lag was a module that made GommeHD server laggy but is patched currently.

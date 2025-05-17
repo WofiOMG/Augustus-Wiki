@@ -1,33 +1,27 @@
----
-title: Spammer
-description: Spamms chat
----
+# SPAMMER
+Spammer spams "Augustus on Top!" in chat or diffrent custom set messages.
 
-Spammer spams Augustus on Top! into the Chat with diffrent Modes
+**MinTickDelay:**
+Sets the minimum delay of ticks between messages.
 
-## Settings
-Here you can configure the Module
+**MaxTickDelay:**
+Sets the maximum delay of ticks between messages.
 
-### MinTickDelay
-Sets the minimum Delay of Ticks between Messages
+Modes
+There are 4 modes Spammer can operate in:
 
-### MaxTickDelay
-Sets the maximum Delay of Ticks between Messages
+RandomNumber
+Sends "Augustus on top!" with random numbers at the end.
 
-## Modes
-There are 4 Modes that Spammer can operate in
+RandomTablistName
+Sends "Augustus on top!" with a random player name from the tablist at the end.
 
-### RandomNumber
-Puts Augustus on Top! with Random numbers at the End
+RandomAlphanumeric
+Sends "Augustus on top!" with random letters (upper and lowercase) and numbers at the end.
 
-### RandomTablistName
-Puts Augustus on Top! with Random Player Name out of the Tablist at the End
+None
+Sends "Augustus on top!" with nothing at the end.
 
-### RandomAlphanumeric
-Puts Augustus on Top! with Random Lower and Uppercase with Numbers at the End
-
-### None
-Puts Augustus on Top! with nothing at the End
-
-## Misc
-Spammer can be configured with the mode “Custom”. With that mode you can spam your custom message by typing .spammer [your message]
+Custom Message
+By default, Spammer sends "Augustus on Top!" but you can change it with the command .spammer [your message] to spam any custom message.
+If you use a custom message it will replace the Augustus on top! in modes with your custom message.
