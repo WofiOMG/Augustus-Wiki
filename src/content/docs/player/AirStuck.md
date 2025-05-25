@@ -1,24 +1,18 @@
 ---
 title: AirStuck
-description: Freezes the player in mid-air
 ---
-Airstuck lets you be stuck in air
+Freezes the player's position mid-air, often used for clutching or stopping movement temporarily.
 
-## Modes
-Diffrent modes for AirStuck
+### Mode
+Controls how your rotation behaves while stuck:
 
-### NoRotate
-This mode does not allow the character to spin, which bypasses anti-cheats, the fact that you can look around is visual!
+- **NoRotate**: Rotation is locked **client-side** and not sent to the server. The server sees you as not turning.
+- **CanRotate**: Rotation is **both client-side and server-side**. You can look around, and the server sees it too.
+- **Intave**: Mimics **server-friendly** behavior tailored for Intave anti-cheat. Rotation may be partially sent to avoid detection.
+- **NewNoRotate**: An improved version of **NoRotate**, still **client-side only**, possibly with smoother behavior.
 
-### CanRotate
-In this mode you can already rotate the camera, but this does not allow you to bypass good anti-cheats that check this, so be careful!
+### Sneak
+Automatically sneaks while stuck, helpful for block placement or anti-cheat behavior.
 
-### Intave
-Airstuck mode specific for intave might be patched
-
-
-
-### NewNoRotate
-A newer and more advanced mode that allows you to bypass more anti-cheats
-
-## Sneak
+### OnlyInAir
+Only activates AirStuck when you are in the air — doesn’t trigger if you’re on the ground.

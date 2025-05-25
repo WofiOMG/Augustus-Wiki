@@ -1,49 +1,51 @@
-# LAGRANGE
+---
+title: LagRange
+---
 Simulates lag spikes by delaying and correcting position to manipulate hit registration or confuse server-side detection.
 
-**PredictTicks**
+### PredictTicks
 How many ticks ahead the module predicts movement.
 
-**Ticks**
+### Ticks
 Duration of the simulated lag spike in ticks.
 
-**Correct**
+### Correct
 If true, repositions you correctly after the lag.
 
-**OnlyOnGround**
+### OnlyOnGround
 Only activates while you're on the ground.
 
-**Stop**
+### Stop
 Stops the lag behavior after conditions are met.
 
-**STap**
+#### STap
 Applies short tap-lag correction logic.
 
-**Delay after attack**
+### Delay after attack
 How long to wait (in ms) after an attack before activating LagRange.
 
-**Delay between lags**
+### Delay between lags
 Minimum time (in ms) between two LagRange activations.
 
-**Stop earl**y
+### Stop early
 Stops LagRange early after this many ticks if conditions are met.
 
-## Targets
+### Targets
 
-**OnlyWhileKillAura:**
+### OnlyWhileKillAura
 Works only when KillAura is enabled.
 
-**Targets:**
- List of valid targets (Player, Mob, Animal, Villager, ArmorStand).
+#### Targets
+List of valid targets (Player, Mob, Animal, Villager, ArmorStand).
 
-**PreAimRange: **
+#### PreAimRange
 Distance at which pre-aiming starts.
 
-**Debug**
-Debug: Enables debug output.
+### Debug
+Enables debug output.
 
-**OnlyInThirdPerson:**
- Shows debug only in 3rd-person view.
+### OnlyInThirdPerson
+Shows debug only in 3rd-person view.
 
-**Time debug gets displayed:**
- Duration (in seconds) to show debug info on screen.
+### Time debug gets displayed
+Duration (in seconds) to show debug info on screen.

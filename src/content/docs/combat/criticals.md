@@ -1,195 +1,194 @@
-# CRITICALS
+---
+title: Criticals
+---
 Improves the chance to land critical hits by manipulating movement and sprinting conditions during attacks.
 
-**Modes: IntaveLowHop:**
+### Modes: IntaveLowHop
 Performs a very small jump (low hop) to trigger critical hits, designed to bypass Intave anti-cheat.
 
-**Packet:**
+---
+### Packet
 Sends specific packets to the server to fake the upward movement needed for critical hits without actually jumping.
 
-**Lag:**
+---
+### Lag
 Simulates lag to create the timing window for critical hits, useful on servers sensitive to movement.
 
-**NoGround:**
+---
+### NoGround
 Tricks the server into thinking you are airborne without jumping, allowing critical hits without leaving the ground visually.
 
-**CustomPacket:**
+---
+### CustomPacket
 Allows custom configuration of packets to tailor critical hit triggering based on server specifics.
 
-**PacketEdit:**
+---
+### PacketEdit
 Modifies outgoing packets related to movement to induce critical hit conditions.
 
-## Modes: IntaveLowHop, Packet
+---
+### Modes: IntaveLowHop, Packet
 
-**LagDuration:**
+#### LagDuration
 Sets how long the module simulates lag to time critical hits better, improving success rate during network delays.
 
-**ForceHit:**
+#### ForceHit
 Forces critical hit conditions even when they normally wouldn’t occur, increasing the chance to trigger critical hits artificially.
 
-**MoveSlowdownOnGround:**
+#### MoveSlowdownOnGround
 Controls whether your movement slows down on the ground during critical attacks.
 
-**SprintOnGround:**
+#### SprintOnGround
 Enables sprinting while on the ground during critical hits.
 
-**MoveSlowdownInAir:**
+#### MoveSlowdownInAir
 Controls movement slowdown while in the air during critical hits.
 
-**SprintOnGroundInAir:**
+#### SprintOnGroundInAir
 Allows sprinting both on the ground and in the air during critical hits.
 
-**Smart:**
+#### Smart
 Automatically adjusts critical hit conditions based on the situation to optimize performance.
 
-## Mode: Lag
+---
+### Mode: Lag
 
-**LagDuration:**
+#### LagDuration
 Sets how long the module simulates lag to time critical hits better, improving success rate during network delays.
 
-**ForceHit:**
+#### ForceHit
 Forces critical hit conditions even when they normally wouldn’t occur, increasing the chance to trigger critical hits artificially.
 
-## Mode: NoGround
+#### Mode: NoGround
 
-**OnlyOnHit:**
- Whether to activate NoGround mode only when hitting a target.
+#### OnlyOnHit
+Whether to activate NoGround mode only when hitting a target.
 
-**Floating:**
+#### Floating
 Makes the player appear slightly floating to the server, aiding in critical hit triggering.
 
-**LagDuration:**
+#### LagDuration
 Duration (in ticks) to simulate lag when using NoGround mode to improve critical hit timing.
 
-**ForceHit:**
+#### ForceHit
 Forces the critical hit effect even when normal conditions aren’t met.
 
-**OnlyWhileJumpKeyPressed:**
+#### OnlyWhileJumpKeyPressed
 Activates NoGround mode only if the jump key is held down.
 
-**OnlyWhileKillAuraTarget:**
+#### OnlyWhileKillAuraTarget
 Enables NoGround mode only when attacking a KillAura target. Keep this off if you are using other aim hacks.
 
-**CriticalsInAir:**
+#### CriticalsInAir
 (Usually true) Allows critical hits to occur while airborne.
 
-**CriticalsOnGround:**
+#### CriticalsOnGround
 Allows critical hits to be registered even when on the ground.
 
-## CustomPacket
+---
+### CustomPacket
 
-**UseC06:**
+#### UseC06
 Whether to use a specific packet type (C06) for movement updates.
 
-**Interval:**
+#### Interval
 How often the custom packets are sent (in ticks).
 
-**SendFirst:**
+#### SendFirst
 Whether to send the first movement packet in the sequence.
 
-**OnGroundFirst:**
+#### OnGroundFirst
 Whether the first packet reports the player as on the ground.
 
-**MinYAddFirst:**
+#### MinYAddFirst
 Minimum vertical offset added to the first packet to simulate slight upward movement.
 
-**MaxYAddFirst:**
+#### MaxYAddFirst
 Maximum vertical offset added to the first packet.
 
-**SendSecond:**
+#### SendSecond
 Whether to send the second movement packet.
 
-**OnGroundSecond:**
+#### OnGroundSecond
 Whether the second packet reports the player as on the ground.
 
-**MinYAddSecond:**
+#### MinYAddSecond
 Minimum vertical offset added to the second packet.
 
-**MaxYAddSecond:**
+#### MaxYAddSecond
 Maximum vertical offset added to the second packet.
 
-**SendThird:**
+#### SendThird
 Whether to send the third movement packet.
 
-**OnGroundThird:**
+#### OnGroundThird
 Whether the third packet reports the player as on the ground.
 
-**MinYAddThird:**
+#### MinYAddThird
 Minimum vertical offset added to the third packet.
 
-**MaxYAddThird:**
+#### MaxYAddThird
 Maximum vertical offset added to the third packet.
 
-**SendFourth:**
+#### SendFourth
 Whether to send the fourth movement packet.
 
-**OnGroundFourth:**
+#### OnGroundFourth
 Whether the fourth packet reports the player as on the ground.
 
-**MinYAddFourth:**
+#### MinYAddFourth
 Minimum vertical offset added to the fourth packet.
 
-**MaxYAddFourth:**
+#### MaxYAddFourth
 Maximum vertical offset added to the fourth packet.
 
-**LagDuration**:
+#### LagDuration
 Duration of simulated lag to optimize critical hit timing.
 
-**ForceHit:**
+#### ForceHit
 Forces critical hit conditions even if natural triggers aren’t met.
 
-**OnlyWhileJumpKeyPressed**
+#### OnlyWhileJumpKeyPressed
 Activates packet sending only when the jump key is held.
 
-**OnlyWhileKillAuraTarget:**
+#### OnlyWhileKillAuraTarget
 Enables the mode only when attacking a KillAura target.
 
-**CriticalsInAir:**
+#### CriticalsInAir
 Allows critical hits while airborne.
 
-**CriticalsOnGround:**
+#### CriticalsOnGround
 Allows critical hits while on the ground.
 
-## PacketEdit
+---
+### PacketEdit
 
-**OnlyOnHit:**
+#### OnlyOnHit
 Activates the mode only when hitting a target.
 
-**SetOnGroundToFalse:**
+#### SetOnGroundToFalse
 Changes the "on ground" status in packets to false, making the server think the player is airborne.
 
-**MinYadd:**
+#### MinYadd
 Minimum vertical offset added to packets to simulate upward movement.
 
-**MaxYadd:**
+#### MaxYadd
 Maximum vertical offset added to packets.
 
-**LagDuration:**
+#### LagDuration
 Simulates lag duration to improve timing for critical hits.
 
-**ForceHit:**
+#### ForceHit
 Forces critical hit conditions even if normal triggers aren’t met.
 
-**OnlyWhileJumpKeyPressed:**
+#### OnlyWhileJumpKeyPressed
 Enables mode only if the jump key is pressed.
 
-**OnlyWhileKillAuraTarget:**
+#### OnlyWhileKillAuraTarget
 Enables mode only when attacking a KillAura target.
 
-**CriticalsInAir:**
+#### CriticalsInAir
 Allows critical hits while airborne.
 
-**CriticalsOnGround:**
+#### CriticalsOnGround
 Allows critical hits while on the ground.
-
-```mermaid
-graph LR
-  A[⚠️ Use of ForceHit] --> B[Can increase flag risk]
-  B --> C[✅ Recommended: Smart mode]
-  B --> D[🎯 OnlyWhileKillAuraTarget prevents suspicious triggers]
-  style A fill:#ffe6e6,stroke:#ff9999,stroke-width:2px
-  style B fill:#fff8e1,stroke:#ffd54f,stroke-width:2px
-  style C fill:#e6f4ea,stroke:#81c784,stroke-width:2px
-  style D fill:#e0f7fa,stroke:#4dd0e1,stroke-width:2px
-```
-

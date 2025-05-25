@@ -1,55 +1,49 @@
-# TIMERRANGE
+---
+title: TimeRange
+---
 TimerRange manipulates the game’s internal timer speed to speed up or slow down actions like attacks, movement, or block placing. It controls how fast game ticks advance, helping with faster clicks or actions while trying to remain undetected by anti-cheat systems.
 
-**Delay:**
+### Delay  
 The base delay in milliseconds before the timer effect starts.
 
-**TimerTicksForward:**
+### TimerTicksForward  
 The number of game ticks the timer moves forward (speeds up) when active.
 
-**Tolerance:**
+### Tolerance  
 The amount of allowed variation in timing to avoid detection or glitches.
 
-**BalanceCheck:**
+### BalanceCheck  
 Enables balancing checks to keep the timer changes subtle and fair.
 
-**MinAdditionalStop:**
+### MinAdditionalStop  
 The minimum extra random pause added after the delay to make timing less predictable.
 
-**MaxAdditionalStop:**
+### MaxAdditionalStop  
 The maximum extra random pause added after the delay for variability.
 
-**OnlyOnGround:**
+### OnlyOnGround  
 If enabled, the timer only works when the player is on the ground (not mid-air).
 
-**Dynamic:**
+### Dynamic  
 Allows the timer to adjust dynamically based on in-game conditions.
 
-**OnlyKillAura:**
+### OnlyKillAura  
 The timer only activates when KillAura (automatic attacking) is enabled.
 
-**ClickCheck:**
+### ClickCheck  
 Synchronizes timer changes with player clicks to maintain consistency.
 
-**ForbiddenSneak:**
+### ForbiddenSneak  
 Disables the timer while sneaking to avoid detection or glitches.
 
-**FixMode:**
-Applies specific fixes or optimizations to improve timer stability or avoid anti-cheat flags. 
+### FixMode  
+Applies specific fixes or optimizations to improve timer stability or avoid anti-cheat flags.
 
-**None:**
-No fix mode
+### None  
+No fix mode.
 
-**Fix1:**
+### Fix1  
 Usually targets basic timing inconsistencies or synchronization problems, smoothing out timer speed changes to avoid sudden jumps that can trigger anti-cheats.
 
-**Fix2:** 
+### Fix2  
 Typically a more advanced or aggressive fix that may include additional corrections or tweaks for specific edge cases where Fix1 isn’t enough.
-
-
-
-
-
-
-
-

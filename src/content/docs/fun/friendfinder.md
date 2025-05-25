@@ -1,14 +1,16 @@
-# FRIENDFINDER
-**FriendFinder (GommeHD): **
+---
+title: FriendFinder
+---
+### FriendFinder (GommeHD):
 Sends friend invites to all players in the lobby to help you find new friends.
 
-**MinDelay:**
+### MinDelay:
  Minimum delay between each invite.
 
-**MaxDelay:**
+### MaxDelay:
  Maximum delay between each invite.
 
-**HideMessage:**
+### HideMessage:
  Hides the sent invite messages in chat.
 
 If MinDelay and MaxDelay differ, a random delay between them is used.

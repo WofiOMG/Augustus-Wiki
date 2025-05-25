@@ -1,34 +1,40 @@
 ---
 title: FastBreak
 ---
-FastBreak lets you modify the block breaking mechanics of minecraft
 
-## NoBlockHitDelay
-Removes the delay that occourse when breaking blocks
+### NoBlockHitDelay:  
+Removes the vanilla cooldown between block hits. Allows instant repeated breaking. Vanila is 5 ticks.
 
-- Without NoBlockHitDelay
+### IgnoreMiningFatigue:  
+Ignores Mining Fatigue effects. You break blocks at full speed even with the debuff.
 
-<img src="https://i.imgur.com/ExCEyYY.gif">
+### OnlyWhenBlink:  
+Only applies the effect when the Blink module is active. Useful for stealth mining.
 
-- With NoBlockHitDelay
+### IgnoreBeds:  
+Prevents the module from affecting beds. Helps beds not respawning after getting broken.
 
-<img src="https://i.imgur.com/GttkzWr.gif">
+### DebugBreakSpeed:  
+Shows debug info about your mining speed. Use for testing or fine-tuning settings.
 
-## IgnoreMiningFatigue
-Ignores the mining fatigue effect and lets you mine normally
+### Mode: Simple, Expert  
+- **Simple**: One multiplier for all tools/blocks.  
+- **Expert**: Lets you set different speeds per item or block type. More precise, flags less.
 
-## Ignore Beds
-Will ignore beds in FastBreak and will not apply any fastbreaking to a bed. Some Ser
+#### CustomInAirMultiplier:  
+Allows modifying break speed while you're in the air (normally slower in vanilla).
 
-## DebugBreakSpeed
+#### InAirMultiplier:  
+The multiplier used when you're mining in the air.
 
+#### Multiplier:  
+The global block breaking speed multiplier. Affects how fast blocks break overall.
 
-## CustomInAirMultiplier
-Lets you set a InAir Multiplier for breaking
+#### ArtificialMiningSpeedEffect:  
+Simulates effects like Haste. Acts as if you have a mining speed potion, even if you don’t.
 
-## Multiplier
-Lets you set OnGround Multiplier for Mining
+#### Instant:  
+If true, blocks that meet the speed threshold will break instantly — like in creative mode.
 
-## ArtificialMiningMultiplier
-
-Ig same as Multiplier
+### DedicatedItemHandling:
+Only use FastBreak when you have the specefied tool in your current hotbar slot.

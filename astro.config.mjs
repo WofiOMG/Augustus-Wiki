@@ -55,27 +55,64 @@ export default defineConfig({
                             label: 'Combat',
                             items: [
                                 { slug: 'combat/antibot' },
+                                { slug: 'combat/antifireball' },
                                 { slug: 'combat/autogapple' },
+                                { slug: 'combat/autopot' },
+                                { slug: 'combat/autosoup' },
+                                { slug: 'combat/bowaimbot' },
+                                { slug: 'combat/criticals' },
+                                { slug: 'combat/gommemode' },
+                                { slug: 'combat/keepsprint' },
                                 { slug: 'combat/killaura' },
-                                {slug: 'combat/morekb' },
+                                { slug: 'combat/morekb' },
+                                { slug: 'combat/movehelper' },
+                                { slug: 'combat/projectileaimbot' },
+                                { slug: 'combat/silentmurder' },
+                                { slug: 'combat/targetarea' },
+                                { slug: 'combat/teams' },
+                                { slug: 'combat/tntblock' },
+                                { slug: 'combat/tpaura' },
+                                { slug: 'combat/velocity' },
+
                             ],
                         },
                         {
                             label: 'Legit',
                             items: [
-                                { slug: 'legit/smartclick' }
+                                { slug: 'legit/smartclick' },
+                                { slug: 'legit/aimassist' }
                             ],
                         },
                         {
                             label: 'Latency',
                             items: [
-                                { slug: 'latency/lagrange' }
+                                { slug: 'latency/blink' },
+                                { slug: 'latency/lagrange' },
+                                { slug: 'latency/packethandler' },
+                                { slug: 'latency/ping' },
+                                { slug: 'latency/pulseblink' },
+                                { slug: 'latency/timerrange' },
+                                { slug: 'latency/timerrangev2' },
+                                { slug: 'latency/backtrack' },
+
                             ],
                         }, 
                         {
                             label: 'Movement',
                             items: [
-                                { slug: 'movement/motionmod' }
+                                { slug: 'movement/autojump' },
+                                { slug: 'movement/autowalk' },
+                                { slug: 'movement/booster' },
+                                { slug: 'movement/bugup' },
+                                { slug: 'movement/clip' },
+                                { slug: 'movement/explosionmodifier' },
+                                { slug: 'movement/fastladder' },
+                                { slug: 'movement/freecam' },
+                                { slug: 'movement/headhitter' },
+                                { slug: 'movement/highjump' },
+                                { slug: 'movement/motionmod' },
+                                { slug: 'movement/arrowdodger' },
+
                             ],
                         },              
                         {
@@ -89,7 +126,16 @@ export default defineConfig({
                                 { slug: 'player/autoenderpearl' },
                                 { slug: 'player/autoextinguish' },
                                 { slug: 'player/autorespawn' },
-                                { slug: 'player/autotool' },
+                                { slug: 'player/chestaura' },
+                                { slug: 'player/cheststealer' },
+                                { slug: 'player/combatpearl' },
+                                { slug: 'player/crafter' },
+                                { slug: 'player/fastuse' },
+                                { slug: 'player/guimove' },
+                                { slug: 'player/invmanager' },
+                                { slug: 'player/norotationset' },
+                                { slug: 'player/noscreenclosing' },
+                                { slug: 'player/phase' },
                             ],
                         },
                         {
@@ -167,7 +213,13 @@ export default defineConfig({
                         {
                             label: 'World',
                             items: [
-                                { slug: 'world/fastbreak' }
+                                { slug: 'world/fastbreak' },
+                                { slug: 'world/fastplace' },
+                                { slug: 'world/fucker' },
+                                { slug: 'world/nominingtrace' },
+                                { slug: 'world/noplacedelay' },
+                                { slug: 'world/scaffold' },
+                                { slug: 'world/smartraytrace' },
                             ],
                         },
                         {

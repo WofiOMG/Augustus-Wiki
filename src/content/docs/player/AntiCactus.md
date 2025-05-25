@@ -1,9 +1,8 @@
 ---
 title: AntiCactus
-description: Prevents damage from cactus
 ---
-The AntiCactus module prevents damage from cactus
+Prevents the player from taking damage from cactus blocks by adjusting movement automatically.
 
-# OnlySide
+### SideOnly
 
-Prevents damage on the side of the cactus but not on top of it
+If enabled, AntiCactus only activates when you're touching the **side** of a cactus, not when standing on top. This avoids unnecessary movement correction in safe situations.

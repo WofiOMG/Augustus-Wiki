@@ -1,9 +1,11 @@
-# AUTOREPORT
+---
+title: AutoReport
+---
 AutoReport (GommeHD mode): Automatically reports all players from your last GommeHD round.
 
-**MinDelay / MaxDelay:**
+### MinDelay / MaxDelay:
  Sets random delay (in ms) between each report.
 
-**HideMessage:**
+### HideMessage:
 Hides the "/report" messages from appearing in chat.
 

@@ -1,12 +1,14 @@
-# DEATHCOMMAND
-**DeathCommand (GommeHD):**
+---
+title: DeathCommand
+---
+## DeathCommand (GommeHD):
  Sends /warp ffa after death to instantly rejoin GommeHD’s FFA (Free For All) arena.
 
-**MinDelay:**
+### MinDelay:
  Minimum delay before sending the command.
 
-**MaxDelay:**
+### MaxDelay:
 Maximum delay before sending the command.
 
-**FFA:**
+### FFA:
 "Free For All" — a PvP mode where every player fights on their own without teams.

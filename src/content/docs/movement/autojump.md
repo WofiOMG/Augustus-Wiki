@@ -1,35 +1,40 @@
-# AUTOJUMP
+---
+title: AutoJump
+---
 A movement module that automatically jumps over specific blocks to improve mobility and movement flow.
 
-**InInv**
-Allows autojumping while in inventory. Might close your inv if sever has inv checks.
+### InInv  
+Allows autojumping while in inventory. Might close your inv if server has inv checks.
 
-**BlocksToAutoJump**
+### BlocksToAutoJump  
 Defines which blocks will trigger autojump: SlimeBlocks, Stairs, HalfSlabs
 
-## SlimeBlocks
+---
+### SlimeBlocks  
 Automatically jumps over slime blocks.
 
-**OnlyWhileMove**
+#### OnlyWhileMove  
 Only jumps when the player is moving.
 
-**OnlyAtSprint**
+#### OnlyAtSprint  
 Only jumps when the player is sprinting.
 
-## Stairs
+---
+### Stairs  
 Automatically jumps over stairs.
 
-**OnlyWhileMove**
+#### OnlyWhileMove  
 Only jumps when the player is moving.
 
-**OnlyAtSprint**
+#### OnlyAtSprint  
 Only jumps when the player is sprinting.
 
-## HalfSlabs
+---
+### HalfSlabs  
 Automatically jumps over half slabs.
 
-**OnlyWhileMove**
+#### OnlyWhileMove  
 Only jumps when the player is moving.
 
-**OnlyAtSprint**
+#### OnlyAtSprint  
 Only jumps when the player is sprinting.

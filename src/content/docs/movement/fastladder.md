@@ -1,67 +1,77 @@
-# FASTLADDER
+---
+title: FastLadder
+---
 A module that speeds up ladder climbing using different movement manipulation methods.
 
-## Modes
+### Modes  
 Different ways to speed up climbing ladders:
 
-**Motion**
+---
+### Motion  
 Manipulates player motion to climb faster.
 
-**Position**
+---
+### Position  
 Directly changes player position to speed up climbing.
 
-**Verus**
+---
+### Verus  
 Uses movement tricks designed to bypass Verus anti-cheat.
 
-**Vulcan**
+---
+### Vulcan  
 Uses methods tailored to bypass Vulcan anti-cheat.
 
-## MotionSettings
+---
+### MotionSettings
 
-**MotionY**
+#### MotionY  
 Adjusts vertical motion speed.
 
-**TickDelay**
+#### TickDelay  
 Delay between motion updates.
 
-**Timer**
+#### Timer  
 Modifies game timer speed for climbing.
 
-**StopOnEnd**
+#### StopOnEnd  
 Stops the effect when ladder climbing ends.
 
-## PositionSettings
+---
+### PositionMode
 
-**Speed**
+#### Speed  
 Sets climbing speed via position changes.
 
-**TickDelay**
+#### TickDelay  
 Delay between position updates.
 
-**Timer**
+### Timer  
 Modifies game timer speed.
 
-**StopOnEnd**
+#### StopOnEnd  
 Stops effect after ladder climbing ends.
 
-## VerusSettings
+---
+### VerusMode
 
-**MotionY**
+#### MotionY  
 Adjusts vertical motion speed for Verus mode.
 
-**Timer**
+#### Timer  
 Modifies game timer speed.
 
-**StopOnEnd**
+#### StopOnEnd  
 Stops effect when climbing ends.
 
-## VulcanSettings
+---
+### VulcanSettings
 
-**MotionY**
+#### MotionY  
 Adjusts vertical motion speed for Vulcan mode.
 
-**Timer**
+#### Timer  
 Modifies game timer speed.
 
-**StopOnEnd**
+#### StopOnEnd  
 Stops effect when climbing ends.

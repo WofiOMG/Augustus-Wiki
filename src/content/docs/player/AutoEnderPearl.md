@@ -1,18 +1,16 @@
 ---
 title: AutoEnderPearl
-description: Automatically throws an ender pearl for teleportation when falling into void
 ---
+Automatically throws an Ender Pearl to teleport, especially useful for quick escapes or positioning.
 
-This function should save you by automatically throwing the pearl to a place where it will be safe and you will not fall (This function is not perfect and it may have bugs and lags)
+### AutoAirstuck
+Automatically activates AirStuck (pauses player movement mid-air) after throwing the pearl for better control.
 
-### Auto airstuck
-Automatically freezes you in mid-air so that the pearl can fly to a safe location.
+#### UnstuckIfCombatPearlDidntLand
+Automatically tries to unstuck the player if the thrown pearl fails to land properly during combat.
 
-### Unstuck if combatPearl didn't land
-Works in combination with the CombatPearl function and unfreezes the player in the air if the pearl does not reach
+### OnlyIfPlayerIsFallingIntoTheVoid
+Activates auto Ender Pearl only if the player is falling into the void to prevent death.
 
-### Only if player is falling into the void
-I think it will be clear from the description of the function name
-
-### Auto disable
-Automatically disables AutoEnderPearl if it has completed its function
+#### AutoDisable
+Automatically disables the AutoEnderPearl feature after the teleport or action is complete.

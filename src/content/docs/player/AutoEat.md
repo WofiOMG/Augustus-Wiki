@@ -1,18 +1,19 @@
 ---
 title: AutoEat
-description: Automatically eats food for you when you are hungry
 ---
+Automatically eats food when the player's hunger reaches a specific value and conditions are meet.
 
-This feature allows you to automate eating food while traveling on the map, so you will waste less food and always be full.
+### MinHunger
+The minimum hunger level at which eating starts.
 
-### MinHunger and MaxHunger
-Allows you to adjust from what hunger point you want the character to eat food. (From 1 to 20)
+### MaxHunger
+The maximum hunger level at which eating is allowed. Helps control when auto-eating stops.
 
 ### UseGapple
-This mode also eats golden apples (and no, it doesn't work like the Autogapple module), it just happens that the player has nothing from food but gapples and if you don't want to save, you can turn it on
+Allows eating golden apples (Gapples) when auto-eating is triggered.
 
-### NotWhileKillaura
-With this function, food is simply not eaten automatically during the killaura, which does not bother you
+### NotWhileKillAura
+Prevents auto-eating while KillAura is active, avoiding interruption during combat.
 
 ### NotWhileScaffold
-Works the same as with NotWhileKillaura, it just doesn't eat food during the scaffold.
+Prevents auto-eating while Scaffold is active, to avoid disrupting block placements or movement.

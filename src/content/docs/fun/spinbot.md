@@ -1,23 +1,25 @@
-# SPINBOT
+---
+title: SpinBot
+---
 Spinbot rapidly rotates your player’s view horizontally and vertically. Rotations are only serverside, to see your rotations you have to be in 3rd person view.
 
-**MinYawSpeed:**
+### MinYawSpeed:
 Minimum speed of horizontal rotation (yaw).
 
-**MaxYawSpeed:**
+### MaxYawSpeed:
 Maximum speed of horizontal rotation (yaw).
 
-**MinPitchValue:**
+### MinPitchValue:
 Minimum vertical rotation (pitch).
 
-**MaxPitchValue:**
+### MaxPitchValue:
 Maximum vertical rotation (pitch).
 
-**Serverside:**
+### Serverside:
 If true, applies spin effects that are visible on the server side.
 
-**MoveFix:**
+### MoveFix:
 Adjusts movement to prevent issues while spinning.
 
-**StopSpinningOn:**
+### StopSpinningOn:
 Stops spinning when interacting with specified blocks or actions like Click, Chest, Crafting Table, or Furnace.

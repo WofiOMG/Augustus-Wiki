@@ -1,47 +1,52 @@
-# TIMERRANGERV2
+---
+title: TimerRangeV2
+---
 TimerRangeV2 is an enhanced timer manipulation module. It controls how your game ticks (server updates) are sped up or slowed down dynamically, especially during combat, to improve hit registration and synchronization while trying to remain undetected by anti-cheats.
 
-**DynamicLagTicks:**
+### DynamicLagTicks  
 Enables dynamic adjustment of lag ticks to better sync timer changes with lag.
 
-**LagTickDiff:**
+#### LagTicks
+Amount of ticks to lag. 1tick = 50ms
+
+#### LagTickDiff  
 The difference in lag ticks allowed before adjusting timer behavior.
 
-**TimerTicks:**
+### TimerTicks  
 Number of timer ticks to speed up or slow down per cycle.
 
-**MaxTargetHurttime:**
+### MaxTargetHurttime  
 Maximum hurt time of a target entity to consider for timer manipulation.
 
-**Delay:**
+### Delay  
 Sets delay before timer manipulation activates or repeats.
 
-**Correct:**
+### Correct  
 Enables correction for timer adjustments to avoid desync.
 
-**Dynamic:**
+### Dynamic  
 When enabled, timer adapts dynamically based on conditions (false means fixed).
 
-**Accurate:**
+### Accurate  
 Ensures the timing adjustments are precise.
 
-**Debug:**
+### Debug  
 Enables debug mode to display timing info for troubleshooting or just chat cosmetic.
 
-**OnlyOnGround:**
+### OnlyOnGround  
 Timer manipulations only activate when player is on the ground.
 
-**FixMode:**
+### FixMode  
 Select fix mode for timer behavior: None, Fix1, or Fix2 (explained before).
 
-**Extreme:**
+### Extreme  
 An option for aggressive timer manipulation (details depend on implementation).
 
-**Targets:**
+### Targets  
 Defines which entities the module should consider for timer effects.
 
-**OnlyWhileKillAura:**
+### OnlyWhileKillAura  
 Module activates only when KillAura (auto attack) is active.
 
-**PreAimRange:**
+#### PreAimRange  
 Range in blocks to pre-aim for targets before applying timer manipulation.

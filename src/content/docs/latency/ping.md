@@ -1,127 +1,131 @@
-# PING
+---
+title: Ping
+---
 Simulates controlled ping behavior by delaying both incoming and outgoing packets, often used for synchronization exploits, bypasses, or custom behavior in combat.
 
-## IncomingGroup
+### IncomingGroup  
 Controls simulated delay for packets from server to client.
 
-**MinIncomingPing**
+### MinIncomingPing  
 Minimum delay (in milliseconds) applied to incoming packets.
 
-**MaxIncomingPing**
+### MaxIncomingPing  
 Maximum delay (in milliseconds) applied to incoming packets.
 
-**MinPingRecalculateDelay**
+### MinPingRecalculateDelay  
 Minimum delay between recalculating a new simulated ping value.
 
-**MaxPingRecalculateDelay**
+### MaxPingRecalculateDelay  
 Maximum delay between ping recalculations.
 
-**PingAccelerationMode**
+### PingAccelerationModeInstant/Smooth 
 Defines how ping changes over time — Instant applies changes immediately, Smooth gradually applies them.
 
-**MinPingAccelerationPerSecond**
+#### MinPingAccelerationPerSecond  
 Minimum rate of increase for ping per second.
 
-**MaxPingAccelerationPerSecond**
+#### MaxPingAccelerationPerSecond  
 Maximum rate of increase for ping per second.
 
-**MinPingAccelerationApplyDelay**
+#### MinPingAccelerationApplyDelay  
 Minimum time before the next ping acceleration can apply.
 
-**MaxPingAccelerationApplyDelay**
+#### MaxPingAccelerationApplyDelay  
 Maximum delay before applying the ping acceleration.
 
-**MinPingAccelerationRecalculateDelay**
+#### MinPingAccelerationRecalculateDelay  
 Minimum interval between recalculations of acceleration behavior.
 
-**MaxPingAccelerationRecalculateDelay**
+#### MaxPingAccelerationRecalculateDelay  
 Maximum interval between acceleration recalculations.
 
-**MinPingDecelerationTime**
+#### MinPingDecelerationTime  
 Minimum time needed to reduce the simulated ping smoothly.
 
-**MaxPingDecelerationTime**
+#### MaxPingDecelerationTime  
 Maximum allowed time to decelerate the ping to a lower value.
 
-## OutgoingGroup
+---
+
+### OutgoingGroup  
 Controls simulated delay for packets from client to server.
 
-**MinOutgoingPing**
+### MinOutgoingPing  
 Minimum simulated ping on outgoing packets.
 
-**MaxOutgoingPing**
+### MaxOutgoingPing  
 Maximum simulated ping on outgoing packets.
 
-**MinPingRecalculateDelay**
+### MinPingRecalculateDelay  
 Minimum delay before recalculating the outgoing ping.
 
-**MaxPingRecalculateDelay**
+### MaxPingRecalculateDelay  
 Maximum delay between outgoing ping recalculations.
 
-**PingAccelerationMode**
+### PingAccelerationModeInstant/Smooth 
 Controls how outgoing ping transitions — Instant or Smooth.
 
-**MinPingAccelerationPerSecond**
+#### MinPingAccelerationPerSecond  
 Minimum speed at which ping increases per second.
 
-**MaxPingAccelerationPerSecond**
+#### MaxPingAccelerationPerSecond  
 Maximum speed at which ping increases per second.
 
-**MinPingAccelerationApplyDelay**
+#### MinPingAccelerationApplyDelay  
 Shortest wait before acceleration is applied to outgoing packets.
 
-**MaxPingAccelerationApplyDelay**
+#### MaxPingAccelerationApplyDelay  
 Longest wait before acceleration is applied.
 
-**MinPingAccelerationRecalculateDelay**
+#### MinPingAccelerationRecalculateDelay  
 Shortest delay before recalculating acceleration behavior.
 
-**MaxPingAccelerationRecalculateDelay**
+#### MaxPingAccelerationRecalculateDelay  
 Longest delay before recalculating acceleration.
 
-**MinPingDecelerationTime**
+#### MinPingDecelerationTime  
 Minimum duration for reducing ping smoothly.
 
-**MaxPingDecelerationTime**
+#### MaxPingDecelerationTime  
 Maximum duration for gradual ping reduction.
 
-**CombatMode**
+---
+
+### CombatMode  
 Enables special behavior or packet delays when engaged in combat.
 
-**MinPingStartDelay**
+### MinPingStartDelay  
 Delay before starting ping simulation when combat begins.
 
-**MaxPingStartDelay**
+### MaxPingStartDelay  
 Maximum delay before activating ping logic during combat.
 
-**ResetPingAtDistanceToTarget**
+### ResetPingAtDistanceToTarget  
 Resets simulated ping behavior if the player is too far from the target.
 
-**FailRate**
+### FailRate  
 Introduces randomization or failure chances in simulation.
 
-**MinFailInterval / MaxFailInterval**
-Controls the interval between potential simulated failures.
+### MinFailInterval / MaxFailInterval  
+Controls the interval between potential simulated failures to show legitimacy.
 
-**Targets**
-Specifies which entities are affected by or taken into account during ping manipulation:
-
+### Targets  
+Specifies which entities are affected by or taken into account during ping manipulation:  
 Player, Mob, Animal, Villager, ArmorStand
 
-**FlushConditions**
-Triggers an immediate flush of all delayed packets under specific actions to avoid desync or misbehavior:
-
-StandingStill
-ScaffoldToggled
-PlaceBlocks
-BreakBlocks
-HoldingBlocks
-UseItem
-OpenedGUI
-InventoryActions
-Velocity
-Explosion
-Teleport
-SprintReset
-SplashPotion
-Attack
+### FlushConditions  
+Triggers an immediate flush of all delayed packets under specific actions to avoid desync or misbehavior:  
+- StandingStill  
+- ScaffoldToggled  
+- PlaceBlocks  
+- BreakBlocks  
+- HoldingBlocks  
+- UseItem  
+- OpenedGUI  
+- InventoryActions  
+- Velocity  
+- Explosion  
+- Teleport  
+- SprintReset  
+- SplashPotion  
+- Attack

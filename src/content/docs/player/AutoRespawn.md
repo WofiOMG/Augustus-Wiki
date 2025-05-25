@@ -1,8 +1,9 @@
 ---
 title: AutoRespawn
-description: Automatically respawns player
 ---
-Automaticly respawns you after death skipping the deathscreen. Usefull for automation work like bots
+### MinDelay:
+Minimum delay between automatically respawning. In ms.
 
-## MinDelay and MaxDelay
-Sets the delay before AutoRespawn should react to a death ingame
+### MaxDelay:
+Maximum delay between automatically respawning. In ms.
+If Min/MaxDelay values are diffrent a random value will be choosen everytime.

@@ -1,8 +1,10 @@
-# PARTYSPAMMER
+---
+title: PartySpammer
+---
 Spams everyone with Party Invites that is in your current lobby.
 
-InviteDelay
+### InviteDelay
 Sets the delay between sending party invites
 
-HidePartyMessage
+### HidePartyMessage
 Hides the messages sent so your chat doesn’t get spammed.

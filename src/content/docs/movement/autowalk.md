@@ -1,109 +1,113 @@
-# AUTOWALK
-A movement module that automatically walks toward targets with advanced rotation control and pathfinding. This module can be combined with AutoPlay and KillAura to play sumo matches without user input. Useful for afk win streaks.
+---
+title: AutoWalk
+---
+A movement module that automatically walks toward targets with advanced rotation control and pathfinding. This module can be combined with AutoPlay and KillAura to play sumo matches without user input. Useful for afk win streaks and other automated tasks.
 
-**MinYawSpeed / MaxYawSpeed**
+### MinYawSpeed / MaxYawSpeed  
 Sets the range of yaw (horizontal) rotation speed.
 
-**MinPitchSpeed / MaxPitchSpeed**
+### MinPitchSpeed / MaxPitchSpeed  
 Sets the range of pitch (vertical) rotation speed.
 
-## RandomType
+### RandomType  
 Determines how randomness is applied to rotations:
 
-**Random**
+### Random  
 Basic Java Random, lightweight and fast.
 
-**SecureRandom**
+### SecureRandom  
 Cryptographically secure RNG, adds heavier variation.
 
-**Gaussian**
+### Gaussian  
 Uses a normal distribution for more natural-looking randomness.
 
-**Intave**
+### Intave  
 Mimics patterns designed to bypass Intave anti-cheat system.
 
-## Randomize
+### Randomize  
 Controls how much and what kind of randomness is added:
 
-**None**
+### None  
 No randomization applied.
 
-**Basic**
+### Basic  
 Adds standard random offsets.
 
-**Doubled**
+### Doubled  
 Doubles the effect of randomness.
 
-**OnlyRotation**
+### OnlyRotation  
 Applies randomness only to rotation, not movement.
 
-**RandomStrength**
+### RandomStrength  
 Adjusts how strong/random the rotations are.
 
-**AdvancedRots**
+### AdvancedRots  
 Enables smarter and more human-like rotations.
 
-**Interpolation**
+### Interpolation  
 Smooths out rotation transitions between angles.
 
-**PathFinding**
+### PathFinding  
 Allows walking around obstacles by calculating a path to the target.
 
-**DebugLine**
+#### DebugLine  
 Draws a line showing the current walking path.
 
-**Distance**
+#### Distance  
 Max distance to start walking toward a target.
 
-**MaxSearch Time**
+#### MaxSearch Time  
 How long the module searches for a path before stopping.
 
-**UpdateTicks**
+#### UpdateTicks  
 Interval (in ticks) between path updates.
 
-**Smooth**
+#### Smooth  
 Enables smoother, less robotic movement.
 
-**KeepRotation**
+#### KeepRotation  
 Maintains the player's rotation while walking.
 
-## MovementMode
+---
+### MovementMode  
 Sets the logic used for movement:
 
-**Rotation**
+#### Rotation  
 Movement is based on current rotation.
 
-**Silent**
+---
+#### Silent  
 Moves without affecting visible rotation. Only server side rotations in first person view, similar to freelook.
 
-**RotationUpdateTicks**
+#### RotationUpdateTicks  
 Tick interval for updating player rotation.
 
-**Targets**
-Defines what entities AutoWalk will follow: Player, Mob, Animal, Villager, ArmorStand, Invisible
+---
+#### Targets  
+Defines what entities AutoWalk will follow: Player, Mob, Animal, Villager, ArmorStand, Invisible  
 Not using AntiBot correctly may cause the module to chase bots.
 
-**OnlyWithKillAuraTarget**
+#### OnlyWithKillAuraTarget  
 Only activates AutoWalk when KillAura has a valid target.
 
-**NoWalkDistanceToTarget**
+#### NoWalkDistanceToTarget  
 Stops walking when within this distance to the target.
 
-**Jump**
+#### Jump  
 Allows jumping while walking. Use JumpFix in KillAura.
 
-**StopWhileEating**
+#### StopWhileEating  
 Disables walking while the player is eating.
 
-**StopWhileSlowness**
+#### StopWhileSlowness  
 Stops walking if affected by slowness.
 
-**AdStrafeOnHit**
+#### AdStrafeOnHit  
 Enables automatic strafing after hitting a target.
 
-**AdStrafeTime**
+#### AdStrafeTime  
 Duration of strafe after a hit.
 
-**DelayAfterRespawn**
+#### DelayAfterRespawn  
 How long to wait after respawning before walking resumes.
-

@@ -1,30 +1,40 @@
 ---
 title: AutoTool
-description: Automatically selects the best tool or weapon from the player's inventory breaking blocks or something
 ---
+Automatically switches to the best tool or sword for the task to improve efficiency.
 
-This function allows you to automate the selection of tools and sword, which allows you to avoid unnecessary actions and achieve your goal faster.
+### Tools
+Enables automatic switching to the appropriate tool (like pickaxe, axe, or shovel) when needed.
 
-## Tools
-If enabled, it will select the necessary tools that you have to break the block.
+### Sword
+Enables automatic switching to a sword for combat situations.
 
-## Sword
-If enabled, it will select a sword to hit a player or mob
+### MinDelayBeforeSwitch
+Minimum delay before switching tools to avoid too fast, unnatural switching.
 
-#### MinDelayBeforeSwitch and MaxDelayBeforeSwitch
-Allows you to set a delay before picking up a certain tool
-
-#### MinDelayAtItemSwitch and MaxDelayAtItemSwitch
-delay when you have already switched to a certain tool to perform an action
-
-#### MinBackSwitchDelay and MaxBackSwitchDelay
-Allows you to adjust the delay to return to your previous slot (Correct me if I explained it wrong somehow)
+### MaxDelayBeforeSwitch
+Maximum delay before switching tools for a natural delay range.
 
 ### NotInARow
-Each delay has this function, it can slow down the action a little, but will allow you to bypass more anti-cheats
+Prevents switching tools repeatedly in a quick sequence to look more human.
 
-## OnlyAtSneak
-Works when you're in sneak
+### MinDelayAtItemSwitch
+Minimum delay applied specifically when switching items.
 
-## Silent
-Doesn't show you switching to some tool that doesn't distract you (it seems to bypass all anti-cheats, but always check just in case)
+### MaxDelayAtItemSwitch
+Maximum delay applied when switching items for varied timing.
+
+### MinBackSwitchDelay
+Minimum delay before switching back to the previous item.
+
+### MaxBackSwitchDelay
+Maximum delay before switching back to the previous item.
+
+### NotInARow
+Prevents switching back repeatedly in quick succession.
+
+### OnlyAtSneak
+Only switches tools automatically while the player is sneaking.
+
+### Silent
+Enables silent switching. This is only client side.

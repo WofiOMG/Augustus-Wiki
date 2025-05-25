@@ -1,24 +1,25 @@
-# TIMER
+---
+title: Timer
+---
 Changes the time for you. Most servers detect any time speed up but server usually dont detect slowdowns which can give you advantages sometimes.
 
-**Time:**
+### Time:
 The base time interval for timer-related actions.
 
-**TimerAfterVelocity:**
+### TimerAfterVelocity:
 Controls whether a timer activates after the player experiences velocity changes.
 
-**TimerAfterVelocityVal:**
+### TimerAfterVelocityVal:
 The delay applied after a velocity event before the module resumes normal operation.
 
-**TimerAfterFallDamage:**
+### TimerAfterFallDamage:
 Controls whether a timer activates after the player takes fall damage.
 
-**TimerAfterFallDamageVal:**
+### TimerAfterFallDamageVal:
 The delay applied after fall damage before resuming normal operation.
 
-**TimerAtBlink:**
+### TimerAtBlink:
 Controls whether a timer activates during blink actions.
 
-**TimerAtBlinkVal:**
+### TimerAtBlinkVal:
 The duration of the timer when blink actions occur.
-

@@ -1,2 +1,4 @@
-# TNTBLOCK
-Provides automatic protection against TNT explosions during combat.
+---
+title: TNTBlock
+---
+Provides automatic protection against TNT explosions.

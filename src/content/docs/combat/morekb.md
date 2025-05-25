@@ -1,191 +1,203 @@
-# MOREKB
+---
+title: MoreKB
+---
 Manipulates sprint resetting and movement patterns to deal more knockback to opponents. Based on Minecraft knockback mechanics, where sprinting right before hitting causes extra KB. This module controls how, when, and how often sprint is reset for max effect.
 
-## Modes:
+### Modes:
 
-## STap
+### STap
  Classic sprint tapping method: stops and quickly restarts sprint to boost KB.
 
-## LegitSneak
+### LegitSneak
  Simulates sneaking while resetting sprint for stealthy behavior.
 
-## Legit
+### Legit
  Mimics natural sprint resets used by legit players.
 
-## LegitFast
+### LegitFast
  Same as Legit but with faster timing.
 
-## Fast
+### Fast
  Resets sprint aggressively with minimal delay.
 
-## LessPacket
+### LessPacket
  Reduces packet usage while resetting sprint to avoid detection.
 
-## Packet
+### Packet
  Uses packet manipulation to reset sprint (no actual key input).
 
-## DoublePacket
+### DoublePacket
  Sends two sprint packets for stronger effect.
 
-## One
+### One
  Only does one sprint reset per trigger.
 
-**HideSneak Animation:**
+
+
+### Duration 
+
+#### MinSprintResetDuration:
+Minimum time sprint is canceled before being reset.
+
+#### MaxSprintResetDuration:
+Maximum sprint cancel duration.
+
+#### NotInARow:HideSneak Animation:
 Hides the sneak animation while using modes like LegitSneak to avoid visual cues.
 
-**FOV:**
-Field of view condition – can restrict MoreKb activation to a specific angle/cone of view.
+#### FOV:
+Field of view condition – can restrict MoreKB activation to a specific angle/cone of view.
 
-**IgnoreEatingTargets:**
+#### IgnoreEatingTargets:
 If enabled, ignores targets that are currently eating, to avoid wasted KB boosts.
 
-**DontSprintResetIfYouAlreadyDidLegit:**
+#### DontSprintResetIfYouAlreadyDidLegit:
 Prevents extra sprint resets if a legit-style one was already performed recently. Helps avoid looking suspicious.
 
-## Timing 
+#### ## Timing 
 MinSprint ResetTime:
 Minimum time between sprint reset triggers.
 
-**MaxSprint ResetTime:**
+#### MaxSprint ResetTime:
 Maximum time between sprint reset triggers. Randomized between min-max to avoid patterns.
 
-**NotInARow:**
+### NotInARow:
 Prevents sprint resets from happening back-to-back in predictable sequences.
 
-**Outliers:**
+#### MaxInARow:
+Sets the maxium number of sprint resets in a row.
+
+### Outliers:
 Enables rare “outlier” sprint reset timings outside the normal range to simulate randomness.
 MinDoubleResetDelayOutlierValue:
 The minimum value used for outlier double reset delay. Only used when an outliner is triggered.
 
-**MaxDoubleResetDelayOutlierValue:**
+#### MaxDoubleResetDelayOutlierValue:
 The maximum value used for outlier double reset delay. Random value is chosen between min and max.
 
-**MinOutlierDelay:**
+#### MinOutlierDelay:
 Minimum delay between two outlier events. Prevents outliers from happening too frequently.
 
-**MaxOutlierDelay:**
+#### MaxOutlierDelay:
 Maximum delay between outlier events. Adds randomness to the timing of when outliers can occur.
 
-**MinSprintResetTimeOutlierValue:**
+#### MinSprintResetTimeOutlierValue:
 Minimum timing used for rare outlier sprint resets.
 
-**MaxSprintResetTimeOutlierValue:**
+#### MaxSprintResetTimeOutlierValue:
 Maximum value for outlier reset timings.
 
-**MinOutlierDelay:**
+#### MinOutlierDelay:
 Minimum delay between each outlier reset.
 
-**MaxOutlierDelay:**
+#### MaxOutlierDelay:
 Maximum delay between outlier resets.
 
-**Normal Distribution:**
+### Normal Distribution:
 Uses a bell-curve distribution (instead of flat randomness) to determine reset timings. Looks more human.
-
-## Duration 
-
-**MinSprintResetDuration:**
-Minimum time sprint is canceled before being reset.
-
-**MaxSprintResetDuration:**
-Maximum sprint cancel duration.
-
-**NotInARow:**
 Prevents multiple sprint cancels in a row. Randomizes them to look legit.
 
-**Outliers:**
+#### Sigma:
+It controls how spread out or variable the generated values are around the average.
+
+#### Center:
+The Center is the mean or average value around which timings cluster.
+
+### Outliers:
 Allows unusual durations occasionally for realism.
 
-**MinSprintResetTicksOutlierValue:**
+#### MinSprintResetTicksOutlierValue:
 Minimum ticks for sprint to cancel outlier duration.
 
-**MaxSprintResetTicksOutlierValue**:
+#### MaxSprintResetTicksOutlierValue:
 Maximum ticks for sprint to cancel outlier duration.
 
-**MinOutlierDelay:**
+#### MinOutlierDelay:
 Minimum delay before next outlier event.
 
-**MaxOutlierDelay:**
+#### MaxOutlierDelay:
 Maximum delay before next outlier event.
 
-**NormalDistribution:**
-**Sigma:**
+### NormalDistribution:
+#### Sigma:
 Controls how "spread out" the values are.
 Lower values = most reset timings will be close to the center (less variation).
 Higher values = more variation and randomness in sprint reset timings.
 
-**Center:**
+#### Center:
 The average (mean) value for the distribution.
 Sprint reset values will tend to cluster around this point when NormalDistribution is enabled.
 
-## DoubleReset 
+### DoubleReset 
 
-**DoubleSprintReset:**
+#### DoubleSprintReset:
 Enables back-to-back sprint resets to maximize knockback.
 
-**MinDoubleResetTiming:**
+#### MinDoubleResetTiming:
 Minimum time between two sprint resets in a double reset.
 
-**MaxDoubleResetTiming:**
+#### MaxDoubleResetTiming:
 Maximum time between sprint resets in a double reset.
 
-**NotInARow:**
+#### NotInARow:
 Prevents doing multiple double resets consecutively.
 
-**NomalDistribution:**
+#### NomalDistribution:
 Randomizes timing between first and second reset with a realistic distribution.
 
-**Sigma:**
+#### Sigma:
 Controls the spread of the normal distribution. Higher = more randomness.
 
-**Center:**
+#### Center:
 Mean value (center) of the distribution for double reset timing.
 
-**MinDoubleResetDelay:**
+#### MinDoubleResetDelay:
 Minimum delay before another double reset can occur in ticks. 20 ticks= 1 sec
 
-**MaxDoubleResetDelay:**
+#### MaxDoubleResetDelay:
 Maximum delay before another double reset can occur.
 
-**Outliers:**
+### Outliers:
 Allows abnormal timing between resets to look more human.
 
-**MinDoubleResetDelayOutlierValue:**
+#### MinDoubleResetDelayOutlierValue:
 The minimum value used for outlier double reset delay. Only used when an outlier is triggered.
 
-**MaxDoubleResetDelayOutlierValue:**
+#### MaxDoubleResetDelayOutlierValue:
 The maximum value used for outlier double reset delay. Random value is chosen between min and max.
 
-**MinOutlierDelay:**
+#### MinOutlierDelay:
 Minimum delay between two outlier events. Prevents outliers from happening too frequently.
 
-MaxOutlierDelay:
+#### MaxOutlierDelay:
 Maximum delay between outlier events. Adds randomness to the timing of when outliers can occur.
-## Fail
 
-**FailSprintReset:**
+### Fail
+
+#### FailSprintReset:
 Simulates failed sprint resets to avoid perfect patterns. Helps bypass anti-cheat.
 
-**MinFailDelay:**
+#### MinFailDelay:
 Minimum delay before a failed sprint reset happens.
 
-**MaxFailDelay:**
+#### MaxFailDelay:
 Maximum delay before a failed reset.
 
-**MinFailDuration:**
+#### MinFailDuration:
 Shortest possible fail duration (how long the sprint reset fails).
 
-**MaxFailDuration:**
+#### MaxFailDuration:
 Longest possible fail duration.
 
-**NotInARow:**
+#### NotInARow:
 Avoids multiple failed resets in a row.
 
-**Normal Distribution:**
-**Sigma:**
+### Normal Distribution:
+#### Sigma:
 Controls how "spread out" the values are.
 Lower values = most reset timings will be close to the center (less variation).
 Higher values = more variation and randomness in sprint reset timings.
 
-**Center:**
+#### Center:
 The average (mean) value for the distribution.
 Sprint reset values will tend to cluster around this point when NormalDistribution is enabled.

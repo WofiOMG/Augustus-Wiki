@@ -1,48 +1,51 @@
-# PULSEBLINK
+---
+title: PulseBlink
+---
 PulseBlink delays packets in bursts at set intervals, releasing multiple packets together in pulses, creating rhythmic packet bursts.
 
 Blink simply holds all packets continuously until manually released or conditions trigger sending them all at once.
 
 So, PulseBlink sends packets in regular timed pulses, while Blink holds them until released in one go.
 
-
-**PacketDirection**
+### PacketDirection  
 Controls which direction of packets are affected by blinking:
 
-**OnlyIncoming**
+### OnlyIncoming  
 Applies blinking only to incoming (server-to-client) packets.
 
-**OnlyOutgoing**
+### OnlyOutgoing  
 Applies blinking only to outgoing (client-to-server) packets.
 
-**Both**
+### Both  
 Applies blinking to both incoming and outgoing packets.
 
-**Delay Settings**
-MinTickDelayBetweenLags
+### Delay Settings  
+MinTickDelayBetweenLags  
 Minimum number of ticks to wait before starting the next blink (lag).
 
 **MaxTickDelayBetweenLags**
 Maximum number of ticks to wait before the next blink cycle.
 
-**MinLagTicks**
+**MinLagTicks** 
 Minimum number of ticks to store/delay packets during a blink.
 
-**MaxLagTicks**
+**MaxLagTicks** 
 Maximum number of ticks to hold/delay packets in a blink cycle.
 
-## Modes
+---
+### Modes  
 Controls behavior style or logic of the blink:
 
-**Defau**lt
+### Default  
 Standard blinking behavior.
 
-**DefaultCombat**
+### DefaultCombat  
 Default blinking tuned for combat scenarios.
 
-**CombatOnly**
+### CombatOnly  
 Only active during combat situations.
 
-**FlushConditions**
-Triggers that instantly flush all delayed packets to prevent desync or allow timely reaction:
+---
+### FlushConditions  
+Triggers that instantly flush all delayed packets to prevent desync or allow timely reaction:  
 Open, InventoryActions, Velocity, Explosion, Teleport, SprintReset, SplashPotion
